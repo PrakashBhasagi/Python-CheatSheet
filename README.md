@@ -5,7 +5,7 @@ This Python 3 Cheat Sheet for Python beginners to help them learn and remember c
 
 Contents
 ---
-**Getting Started with Python Language:**
+[**Getting Started with Python Language:**](getting_started.md)
 - [`Getting Started`](getting_started.md\#getting-started) 
 - [`Installation`](getting_started.md\#installation)
 - [`Creating Variables and Assigning values`](getting_started.md\#creating-variables-and-assigning-values)

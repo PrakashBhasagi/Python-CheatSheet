@@ -16,8 +16,8 @@ Contents
 
 Getting Started
 ---
-- Python is a widely used `high-level programming language` for general-purpose programming.
-- Created by `Guido van Rossum` and first released in `1991`.
+- Python is a widely used *high-level programming language* for general-purpose programming.
+- Created by *Guido van Rossum* and first released in *1991*.
 
 ### `Features`
 - Dynamic type system
@@ -76,7 +76,7 @@ pi = 3.14
 name = 'welcome'
 x = None
 ```
-Error
+Error:
 ```python
 0 = x
 #Output: SyntaxError: can't assign to literal
@@ -86,7 +86,7 @@ Error
 2. The remainder of your variable name may consist of letters, numbers and underscores.
 3. Names are case sensitive
 
-assign multiple values to multiple variables
+*Assign multiple values to multiple variables*
 ```python
 a, b, c = 1, 2, 3
 print(a, b, c)
@@ -116,8 +116,8 @@ if x > y: y = x
  print(y) # IndentationError: unexpected indent
 if x > y: while y != z: y -= 1 # SyntaxError: invalid syntax
 ```
-An empty block causes an IndentationError. Use pass (a command that does nothing) when you have a block with
-no content:
+*An empty block causes an IndentationError. Use pass (a command that does nothing) when you have a block with
+no content:*
 ```python
 def will_be_implemented_later():
  pass
@@ -150,7 +150,7 @@ a = 2.0
 b = 100.e0
 c = 123456789.e1
 ```
-- `complex`: Conmplex Number
+- `complex`: Complex Number
 ```python
 a = 2 + 1j
 b = 100 + 10j
@@ -254,6 +254,7 @@ for element in my_list:
  print (element)
 ```
 `Tuples`
+
 A tuple is similar to a list except that it is fixed-length and immutable.
 ```python
 one_member_tuple = tuple(['Only member'])
@@ -309,15 +310,14 @@ x = input("Write a number:")    # Out: Write a number: 10
 x / 2   # Out: TypeError: unsupported operand type(s) for /: 'str' and 'int'
 float(x) / 2    # Out: 5.0
 ```
-- `Note: It's recommended to use try/except blocks to catch exceptions when dealing with user inputs. For instance, if your code wants to cast a raw_input into an int, and what the user writes is uncastable, it raises a ValueError.`
+> `Note: It's recommended to use try/except blocks to catch exceptions when dealing with user inputs. For instance, if your code wants to cast a raw_input into an int, and what the user writes is uncastable, it raises a ValueError.`
 
 Builtin Modules and Functions
 ---
 To check the built in function in python we can use dir(). If called without an argument, return the names in the current scope.
 ```console
 >>> dir(__builtins__)
-[
- 'ArithmeticError',
+['ArithmeticError',
  'AssertionError',
  'AttributeError',
  'BaseException',
@@ -463,11 +463,11 @@ To check the built in function in python we can use dir(). If called without an 
 ]
 ```
 help
-- to know the functionality of any function
+- To know the functionality of any function
 ```console
 >>> help(max)
-Help on built-in function max in module __builtin__:
-max(...)
+ Help on built-in function max in module __builtin__:
+ max(...)
  max(iterable[, key=func]) -> value
  max(a, b, c, ...[, key=func]) -> value
  With a single iterable argument, return its largest item.
@@ -476,7 +476,6 @@ max(...)
 ```console
 >>> import math
 >>> dir(math)
-
 ['__doc__', '__name__', '__package__', 'acos', 'acosh',
  'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign',
  'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1',
