@@ -1,26 +1,26 @@
 # 1. Getting Started with Python Language:
 
 - [1. Getting Started with Python Language:](#1-getting-started-with-python-language)
-  - [1.2. Getting Started](#12-getting-started)
-    - [1.2.1. `Features`](#121-features)
-  - [1.3. Installation](#13-installation)
-    - [1.3.1. `Verify if Python is installed`](#131-verify-if-python-is-installed)
-    - [1.3.2. `Download Python`](#132-download-python)
-  - [1.4. Creating Variables and Assigning values](#14-creating-variables-and-assigning-values)
-    - [`Rules for variable naming:`](#rules-for-variable-naming)
-  - [1.5. Indentation](#15-indentation)
-  - [1.6. Datatypes](#16-datatypes)
-  - [1.7. Collection Types](#17-collection-types)
-  - [1.8. User Input](#18-user-input)
-  - [1.9. Builtin Modules and Functions](#19-builtin-modules-and-functions)
-  - [1.10. Creating Module](#110-creating-module)
+  - [1.1. Getting Started](#11-getting-started)
+    - [1.1.1. `Features`](#111-features)
+  - [1.2. Installation](#12-installation)
+    - [1.2.1. `Verify if Python is installed`](#121-verify-if-python-is-installed)
+    - [1.2.2. `Download Python`](#122-download-python)
+  - [1.3. Creating Variables and Assigning values](#13-creating-variables-and-assigning-values)
+    - [1.3.1. `Rules for variable naming:`](#131-rules-for-variable-naming)
+  - [1.4. Indentation](#14-indentation)
+  - [1.5. Datatypes](#15-datatypes)
+  - [1.6. Collection Types](#16-collection-types)
+  - [1.7. User Input](#17-user-input)
+  - [1.8. Builtin Modules and Functions](#18-builtin-modules-and-functions)
+  - [1.9. Creating Module](#19-creating-module)
 
-1.2. Getting Started
+1.1. Getting Started
 ---
 - Python is a widely used **high-level programming language** for general-purpose programming.
 - Created by **Guido van Rossum** and first released in **1991**.
 
-### 1.2.1. `Features`
+### 1.1.1. `Features`
 - Dynamic type system
 - Automatic memory management
 - Supports multiple programming paradigms
@@ -33,9 +33,9 @@
 - Python 3.x (Current version)
 - Python 2.x
 
-1.3. Installation
+1.2. Installation
 ---
-### 1.3.1. `Verify if Python is installed`
+### 1.2.1. `Verify if Python is installed`
 - Open Terminal(MAC/ Linux) or Command Prompt(Windows)
 - Type 
 ```console
@@ -43,7 +43,7 @@ $ python --version
 Python 3.9.6
 ```
 - If you have Python 3.x/ 2.x installed. If not go ahead and download and install latest version of python
-### 1.3.2. `Download Python`
+### 1.2.2. `Download Python`
 `Windows`
 - download the latest version of Python 2.7 from the [Official Website](https://www.python.org/downloads/).
 - To install it manually, just double-click the file.
@@ -62,7 +62,7 @@ brew install python3
 ```
 
 
-1.4. Creating Variables and Assigning values
+1.3. Creating Variables and Assigning values
 ---
 Syntax:
 ```python
@@ -81,7 +81,7 @@ Error:
 0 = x
 #Output: SyntaxError: can't assign to literal
 ```
-### `Rules for variable naming:`
+### 1.3.1. `Rules for variable naming:`
 1. Variables names must start with a letter or an underscore
 2. The remainder of your variable name may consist of letters, numbers and underscores.
 3. Names are case sensitive
@@ -93,7 +93,7 @@ print(a, b, c)
 # Output: 1 2 3
 ```
 
-1.5. Indentation
+1.4. Indentation
 ---
 Python uses the colon symbol (:) and indentation for showing where blocks of code begin and end
 Example:
@@ -133,7 +133,7 @@ def will_be_implemented_later():
     pass
 ```
 
-1.6. Datatypes
+1.5. Datatypes
 ---
 
 `bool`
@@ -204,7 +204,7 @@ d = int(b) # 123
 - `set`
 - `dict`
 
-1.7. Collection Types
+1.6. Collection Types
 ---
 `Lists`
 
@@ -326,7 +326,7 @@ if name in first_names:
  print(name)
 ```
 
-1.8. User Input
+1.7. User Input
 ---
 ```python
 name = raw_input("What is your name? ") # Out: What is your name? _
@@ -340,7 +340,7 @@ float(x) / 2    # Out: 5.0
 ```
 > `Note: It's recommended to use try/except blocks to catch exceptions when dealing with user inputs. For instance, if your code wants to cast a raw_input into an int, and what the user writes is uncastable, it raises a ValueError.`
 
-1.9. Builtin Modules and Functions
+1.8. Builtin Modules and Functions
 ---
 To check the built in function in python we can use dir(). If called without an argument, return the names in the current scope.
 ```console
@@ -514,7 +514,7 @@ To check the built in function in python we can use dir(). If called without an 
  'tan', 'tanh', 'trunc']
 ```
 
-1.10. Creating Module
+1.9. Creating Module
 ---
 - A module is an importable file containing definitions and statements
 - A module can be created by creating a .py file.
