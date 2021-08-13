@@ -1,25 +1,26 @@
-# Getting Started with Python Language:
+# 1. Getting Started with Python Language:
 
-Contents
---------
-**Getting Started with Python Language:** 
-- [`Getting Started`](#Getting) 
-- [`Installation`](#installation)
-- [`Creating Variables and Assigning values`](#creating-variables-and-assigning-values)
-- [`Indentation`](#indentation)
-- [`DataTypes`](#datatypes)
-- [`Collection Types`](#collection-types)
-- [`User Input`](#user-input)
-- [`BuiltIn Modules and Functions`](#builtin-modules-and-functions)
-- [`Creating Module`](#creating-module)
+- [1. Getting Started with Python Language:](#1-getting-started-with-python-language)
+  - [1.2. Getting Started](#12-getting-started)
+    - [1.2.1. `Features`](#121-features)
+  - [1.3. Installation](#13-installation)
+    - [1.3.1. `Verify if Python is installed`](#131-verify-if-python-is-installed)
+    - [1.3.2. `Download Python`](#132-download-python)
+  - [1.4. Creating Variables and Assigning values](#14-creating-variables-and-assigning-values)
+    - [`Rules for variable naming:`](#rules-for-variable-naming)
+  - [1.5. Indentation](#15-indentation)
+  - [1.6. Datatypes](#16-datatypes)
+  - [1.7. Collection Types](#17-collection-types)
+  - [1.8. User Input](#18-user-input)
+  - [1.9. Builtin Modules and Functions](#19-builtin-modules-and-functions)
+  - [1.10. Creating Module](#110-creating-module)
 
-
-Getting Started
+1.2. Getting Started
 ---
-- Python is a widely used *high-level programming language* for general-purpose programming.
-- Created by *Guido van Rossum* and first released in *1991*.
+- Python is a widely used **high-level programming language** for general-purpose programming.
+- Created by **Guido van Rossum** and first released in **1991**.
 
-### `Features`
+### 1.2.1. `Features`
 - Dynamic type system
 - Automatic memory management
 - Supports multiple programming paradigms
@@ -28,14 +29,13 @@ Getting Started
 - Procedural styles
 - Large and Comprehensive Standard Library.
 
-### `Major versions`
+`Major versions`
 - Python 3.x (Current version)
 - Python 2.x
 
-
-Installation
+1.3. Installation
 ---
-### `Verify if Python is installed`
+### 1.3.1. `Verify if Python is installed`
 - Open Terminal(MAC/ Linux) or Command Prompt(Windows)
 - Type 
 ```console
@@ -43,12 +43,12 @@ $ python --version
 Python 3.9.6
 ```
 - If you have Python 3.x/ 2.x installed. If not go ahead and download and install latest version of python
-### `Download Python`
+### 1.3.2. `Download Python`
 `Windows`
 - download the latest version of Python 2.7 from the [Official Website](https://www.python.org/downloads/).
 - To install it manually, just double-click the file.
 -  Installation does automatically modify the PATH environment variable in 3.x but not in 2.x.
-- verify once after installion
+- verify once after installation
 
 `macOS`
 - As we speak, macOS comes installed with Python 2.7.10, but this version is outdated and slightly modified from the regular Python.
@@ -62,7 +62,7 @@ brew install python3
 ```
 
 
-Creating Variables and Assigning values
+1.4. Creating Variables and Assigning values
 ---
 Syntax:
 ```python
@@ -80,7 +80,7 @@ Error:
 ```python
 0 = x
 #Output: SyntaxError: can't assign to literal
-````
+```
 ### `Rules for variable naming:`
 1. Variables names must start with a letter or an underscore
 2. The remainder of your variable name may consist of letters, numbers and underscores.
@@ -93,37 +93,47 @@ print(a, b, c)
 # Output: 1 2 3
 ```
 
-Indentation
+1.5. Indentation
 ---
 Python uses the colon symbol (:) and indentation for showing where blocks of code begin and end
 Example:
 ```python
-def my_function(): # This is a function definition. Note the colon (:)
- a = 2 # This line belongs to the function because it's indented
- return a # This line also belongs to the same function
-print(my_function())  # This line is OUTSIDE the function block
+class ExampleClass:
+ #Every function belonging to a class must be indented equally
+ def __init__(self):
+     name = "example"
+ def someFunction(self, a): #Notice everything belonging to a function must be indented
+    if a > 5:
+        return True
+    else:
+        return False
 ```
 or
 ```python
-if a > b: # If block starts here
- print(a) # This is part of the if block
-else: # else must be at the same level as if
- print(b) # This line is part of the else block
+#If a function is not indented to the same level it will not be considers as part of the parent class
+def separateFunction(b):
+    for i in b:
+ #Loops are also indented and nested conditions start a new indentation
+        if i == 1:
+            return True
+    return False
+separateFunction([2,3,5,6,1])
+
 ```
 
 ```python
 if x > y: y = x
- print(y) # IndentationError: unexpected indent
+    print(y) # IndentationError: unexpected indent
 if x > y: while y != z: y -= 1 # SyntaxError: invalid syntax
 ```
-*An empty block causes an IndentationError. Use pass (a command that does nothing) when you have a block with
-no content:*
+> An empty block causes an IndentationError. Use pass (a command that does nothing) when you have a block with
+no content:
 ```python
 def will_be_implemented_later():
- pass
+    pass
 ```
 
-Datatypes
+1.6. Datatypes
 ---
 
 `bool`
@@ -172,7 +182,7 @@ print(type(b))  # Out: <class 'int'>
 i = 7
 isinstance(i, int)  # Out: True
 ```
-`Converting between datatypes`
+`Typecasting between datatypes`
 ```python
 a = '123'
 b = int(a)
@@ -187,23 +197,33 @@ d = int(b) # 123
 - `bytes`
 - `tuple`
 - `frozenset`
+
 `Examples of mutable Data Types`:
 - `bytearray`
 - `list`
 - `set`
 - `dict`
 
-
-Collection Types
+1.7. Collection Types
 ---
 `Lists`
+
+- The list type is probably the most commonly used collection type in Python. 
+- Despite its name, a list is more like an array in other languages, mostly JavaScript.
+- List is merely an ordered collection of valid Python values.
+- A list can be created by enclosing values, separated by commas, in square brackets:
+
+`Declaring and Assigning values to list: `
 ```python
 int_list = [1, 2, 3]    #list of integers
 string_list = ['abc', 'defghi'] #list of strings
 empty_list = []         #Empty list
 mixed_list = [1, 'abc', True, 2.34, None]   #list of multiple data type
 nested_list = [['a', 'b', 'c'], [1, 2, 3]]  #list can contain another list as its element
-
+```
+`Accessing list by index: `
+```python
+names = ['Alice', 'Bob', 'Craig', 'Diana', 'Eric']
 print(names[0]) # Alice
 print(names[2]) # Craig
 
@@ -213,31 +233,38 @@ print(names[-4]) # Bob
 
 names[0] = 'Ann'
 print(names)    # ['Ann', 'Bob', 'Craig', 'Diana', 'Eric']
-
-#Add an elements to a list:
+```
+`Add an elements to a list:`
+```python
 names = ['Alice', 'Bob', 'Craig', 'Diana', 'Eric']
 names.append("Sia")
 print(names) #['Alice', 'Bob', 'Craig', 'Diana', 'Eric', 'Sia']
-
-#Add a new element to list at a specific index.
+```
+`Add a new element to list at a specific index:`
+```python
 names.insert(1, "Nikki")
 print(names)    # ['Alice', 'Nikki', 'Bob', 'Craig', 'Diana', 'Eric', 'Sia']
-
-#Remove the first occurrence of a value
+```
+`Remove the first occurrence of a value :`
+```python
 names.remove("Bob")
 print(names) # ['Alice', 'Nikki', 'Craig', 'Diana', 'Eric', 'Sia']
-
-#Get the index of element in list
-name.index("Alice") # 0
-
-#Count length of list
+```
+`Get the index of element in list :`
+```python
+names.index("Alice") # 0
+```
+`Count length of list :`
+```python
 len(names)  # 6
-
-#count occurrence of any item in list
+```
+`count occurrence of any item in list :`
+```python
 a = [1, 1, 1, 2, 3, 4]
 a.count(1)  # 3
-
-#Reverse the list
+```
+`Reverse the list :`
+```python
 a.reverse()
 [4, 3, 2, 1, 1, 1]
 
@@ -245,11 +272,13 @@ a.reverse()
 
 a[::-1]
 [4, 3, 2, 1, 1, 1]
-
-#Remove and return item at index 
+```
+`Remove and return item at index :`
+```python
 names.pop() # 'Sia'
-
-#iterate over the list elements
+```
+`Iterate over the list elements:`
+```python
 for element in my_list:
  print (element)
 ```
@@ -297,8 +326,7 @@ if name in first_names:
  print(name)
 ```
 
-
-User Input
+1.8. User Input
 ---
 ```python
 name = raw_input("What is your name? ") # Out: What is your name? _
@@ -312,7 +340,7 @@ float(x) / 2    # Out: 5.0
 ```
 > `Note: It's recommended to use try/except blocks to catch exceptions when dealing with user inputs. For instance, if your code wants to cast a raw_input into an int, and what the user writes is uncastable, it raises a ValueError.`
 
-Builtin Modules and Functions
+1.9. Builtin Modules and Functions
 ---
 To check the built in function in python we can use dir(). If called without an argument, return the names in the current scope.
 ```console
@@ -462,7 +490,8 @@ To check the built in function in python we can use dir(). If called without an 
  'zip'
 ]
 ```
-help
+
+`help`
 - To know the functionality of any function
 ```console
 >>> help(max)
@@ -483,10 +512,9 @@ help
  'hypot', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10',
  'log1p', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt',
  'tan', 'tanh', 'trunc']
-
 ```
 
-Creating Module
+1.10. Creating Module
 ---
 - A module is an importable file containing definitions and statements
 - A module can be created by creating a .py file.
