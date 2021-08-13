@@ -7,15 +7,15 @@ Contents
 ---
 [**Getting Started with Python Language:**](All/getting_started.md)
 
-- [Getting Started](All/getting_started.md\#11-getting-started)
-- [Installation](All/getting_started.md\#12-installation)
-- [Creating Variables and Assigning values](All/getting_started.md\#13-creating-variables-and-assigning-values)
-- [Indentation](All/getting_started.md\#14-indentation)
-- [Datatypes](All/getting_started.md\#15-datatypes)
-- [Collection Types](All/getting_started.md\#16-collection-types)
-- [User Input](All/getting_started.md\#18-user-input)
-- [Builtin Modules and Functions](All/getting_started.md\#18-builtin-modules-and-functions)
-- [Creating Module](All/getting_started.md\#19-creating-module)
+- [`Getting Started`](All/getting_started.md\#11-getting-started)
+- [`Installation`](All/getting_started.md\#12-installation)
+- [`Creating Variables and Assigning values`](All/getting_started.md\#13-creating-variables-and-assigning-values)
+- [`Indentation`](All/getting_started.md\#14-indentation)
+- [`Datatypes`](All/getting_started.md\#15-datatypes)
+- [`Collection Types`](All/getting_started.md\#16-collection-types)
+- [`User Input`](All/getting_started.md\#18-user-input)
+- [`Builtin Modules and Functions`](All/getting_started.md\#18-builtin-modules-and-functions)
+- [`Creating Module`](All/getting_started.md\#19-creating-module)
 
 **Python Data Types:**
 - [`String Data Type`](All/datatype.md\#11-string) 
