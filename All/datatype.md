@@ -323,7 +323,7 @@ argument.'
   - string.istitle
   - string.isdecimal
   - string.isdigit
-  - string.numeric
+  - string.isnumeric
   - string.isalnum
   - string.isspace
 
@@ -374,7 +374,7 @@ True
 >>> "".istitle()
 False
 ```
-`string.isdecimal` `string.isdigit` `string.numeric`
+`string.isdecimal` `string.isdigit` `string.isnumeric`
 
 |  | isdecimal | isdigit | isnumeric |
 | :---: | :---: | :---: | :---:|
@@ -501,7 +501,7 @@ a.index(49) # ValueError, because 49 is not in a.
 a.index(7, 7) # Returns: 7
 a.index(7, 8) # ValueError, because there is no 7 starting at index 8
 ```
-`list.insertt(index, value)` – inserts value just before the specified index.
+`list.insert(index, value)` – inserts value just before the specified index.
 
 Thus after the insertion the new
 element occupies position index.
@@ -523,7 +523,7 @@ a.pop(8)  # Returns: 7
 a.pop() # Returns: 10
 # a: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-`list.removee(value)` – removes the first occurrence of the specified value.
+`list.remove(value)` – removes the first occurrence of the specified value.
 
 If the provided value cannot be found, a
 ValueError is raised.
@@ -961,7 +961,7 @@ mydict['b'].append('four') # => {'a': [1, 2, 3, 4], 'b': ['one', 'two', 'three',
 ```python
 # We can also create a dictionary using a list of two-items tuples
 iterable = [('eggs', 5), ('milk', 2)]
-dictionary = dict(iterables)
+dictionary = dict(iterable)
 
 # Or using keyword argument:
 dictionary = dict(eggs=5, milk=2)
